@@ -86,7 +86,7 @@ def hangman(secretWord):
     while 1:
         print line
         print 'You have ' + str(gueses) + ' guesses left.'
-        print 'Aviable letters ' + getAvailableLetters(lettersGuessed)
+        print 'Aviable letters: ' + getAvailableLetters(lettersGuessed)
         letter = raw_input('Please guess a letter: ')
         if letter in lettersGuessed and letter in secretWord:
             print 'Oops, you have already guest that letter'
