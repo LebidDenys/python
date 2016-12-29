@@ -9,11 +9,6 @@ class Animal(object):
         self.foxes_list = []
         self.rabbits_list = []
 
-    def steps_method(self, animal):
-        for i in range(self.steps):
-            return self.run_simulation(animal)
-
-
 class Rabbits(Animal):
 
     def __init__(self, rabbits_pop, max_rabbits):
