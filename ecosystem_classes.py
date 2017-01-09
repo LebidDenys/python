@@ -9,10 +9,6 @@ class Animal(object):
         self.foxes_list = []
         self.rabbits_list = []
 
-    def steps_method(self, animal):
-        for i in range(self.steps):
-            return self.run_simulation(animal)
-
 
 class Rabbits(Animal):
 
@@ -58,9 +54,9 @@ class Run(object):
         pylab.plot(numpy.polyval(coeff,range(len(list_of_populations))),line_atribute)
 
 
-fox = Foxes(500, 30, 1000)
+fox = Foxes(500, 300, 10000)
 run = Run()
-run.run_simulation(50, fox)
+run.run_simulation(500, fox)
 run.visualisation(fox.rabbits_list, 'go', 'g')
 run.visualisation(fox.foxes_list, 'ro', 'r')
 pylab.show()
