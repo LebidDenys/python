@@ -1,1 +1,1 @@
-Training projects on python
+Univesity projects on python
